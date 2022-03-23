@@ -1,7 +1,12 @@
+import { ProdutoStorage } from "./hooks/produtosContext";
+import { Produto } from "./Produto";
+
 function App() {
   return (
     <div>
-      <h1 className="bg-red-500">OLA MUNDO</h1>
+      <ProdutoStorage>
+        <Produto />
+      </ProdutoStorage>
     </div>
   );
 }
